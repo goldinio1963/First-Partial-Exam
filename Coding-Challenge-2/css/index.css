@@ -2,3 +2,71 @@ div{
   border: 1px solid black;
   padding: 5px;
 }
+ .content {
+   display: none;
+ }
+
+ .heading {
+   display: none;
+ }
+
+ .navigation {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+ }
+
+ .nav-box {
+   padding: 10px;
+   margin: 10px;
+   text-align: center;
+ }
+
+ @media (min-width: 600px) and (max-width: 990px) {
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+ 
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .side {
+      display: flex;
+      flex-direction: row;
+      flex-direction: column;
+    }
+
+    .side-box {
+      text-align: center;
+      margin: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+ }
+
+ @media (min-width: 991px) {
+   .heading{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+   }
+   .content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .side {
+    flex-direction: column;
+    
+  }
+ }
